@@ -9,6 +9,31 @@ import { ContactPgeComponent } from './contact-pge/contact-pge.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
+import { NavigationComponent } from './navigation/navigation.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"admin",
+    component:AdminLoginComponent
+  },
+  {
+    path:"",
+    component:HomePageComponent
+  },
+  {
+    path:"about",
+    component:AboutPageComponent
+  },
+  {
+    path:"solution",
+    component:SolutionPageComponent
+  },
+  {
+    path:"contact",
+    component:ContactPgeComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -17,12 +42,14 @@ import { FormsModule } from '@angular/forms';
     SolutionPageComponent,
     ContactPgeComponent,
     AboutPageComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
