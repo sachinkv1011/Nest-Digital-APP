@@ -15,11 +15,8 @@ export class AdminLoginComponent {
   }
   
   readValue = () => {
-    this.data = {
-      "username": this.username,
-      "password": this.password
-    }
-    if (this.data.username == "admin" && this.data.password == "nestdigital") {
+    
+    if (this.username == "admin" && this.password == "nestdigital") {
       this.route.navigate(['/home'])
     } else {
       alert("invalid login")
