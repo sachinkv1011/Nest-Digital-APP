@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <h1 class="text-center">Employee login</h1>
+            
+            <div class="card mt-4 bg-secondary">
+                <div class="card-body">
+
+            <h1 class="text-center mt-4">Employee login</h1>
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Employee Id</label>
@@ -11,13 +15,13 @@
                     <label for="" class="form-label">Password</label>
                     <input name="password" [(ngModel)]="password" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="readValue()" class="btn btn-outline-success">Login</button>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-success">Login</button>
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <a routerLink="/employeereg" class="btn btn-outline-primary">New Employee Registration</a>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <a routerLink="/employeereg" class="btn btn-primary">New Employee Registration</a>
                 </div>
-            </div>
+            </div></div></div>
         </div>
     </div>
 </div>
