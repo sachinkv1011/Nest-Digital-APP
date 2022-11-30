@@ -23,7 +23,8 @@ export class AddFriendComponent {
     }
     this.api.addFriend(data).subscribe(
 
-      (response: any) => {
+      (response: any) => 
+       {
 
         console.log(response)
 
@@ -33,7 +34,7 @@ export class AddFriendComponent {
           this.friendName = ""
           this.friendNickName = ""
           this.DescribeYourFriend = ""
-          
+
         } else {
           alert("Something went wrong")
         }
