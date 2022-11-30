@@ -7,6 +7,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SolutionPageComponent } from './solution-page/solution-page.component';
 import { ContactPgeComponent } from './contact-pge/contact-pge.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { AboutPageComponent } from './about-page/about-page.component';
     HomePageComponent,
     SolutionPageComponent,
     ContactPgeComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
