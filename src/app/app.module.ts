@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewAllFriendsComponent } from './view-all-friends/view-all-friends.component';
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { EmployeePortalComponent } from './employee-portal/employee-portal.component';
+import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 
 const myRoute:Routes=[
   {
@@ -53,6 +54,10 @@ const myRoute:Routes=[
   {
     path:"elogin",
     component:EmployeePortalComponent
+  },
+  {
+    path:"employeereg",
+    component:EmployeeRegistrationComponent
   }
 ]
 
@@ -68,7 +73,8 @@ const myRoute:Routes=[
     ViewAllCoursesComponent,
     ViewAllFriendsComponent,
     ViewNavbarComponent,
-    EmployeePortalComponent
+    EmployeePortalComponent,
+    EmployeeRegistrationComponent
   ],
   imports: [
     BrowserModule,
