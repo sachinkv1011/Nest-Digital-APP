@@ -13,6 +13,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllCoursesComponent } from './view-all-courses/view-all-courses.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewAllFriendsComponent } from './view-all-friends/view-all-friends.component';
 
 const myRoute:Routes=[
   {
@@ -46,7 +47,8 @@ const myRoute:Routes=[
     AboutPageComponent,
     AdminLoginComponent,
     NavigationComponent,
-    ViewAllCoursesComponent
+    ViewAllCoursesComponent,
+    ViewAllFriendsComponent
   ],
   imports: [
     BrowserModule,
