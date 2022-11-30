@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewAllCoursesComponent } from './view-all-courses/view-all-courses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewAllFriendsComponent } from './view-all-friends/view-all-friends.component';
+import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 
 const myRoute:Routes=[
   {
@@ -35,6 +36,18 @@ const myRoute:Routes=[
   {
     path:"contact",
     component:ContactPgeComponent
+  },
+  {
+    path:"course",
+    component:ViewAllCoursesComponent
+  },
+  {
+    path:"friends",
+    component:ViewAllFriendsComponent
+  },
+  {
+    path:"logout",
+    component:AdminLoginComponent
   }
 ]
 
@@ -48,7 +61,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     NavigationComponent,
     ViewAllCoursesComponent,
-    ViewAllFriendsComponent
+    ViewAllFriendsComponent,
+    ViewNavbarComponent
   ],
   imports: [
     BrowserModule,
