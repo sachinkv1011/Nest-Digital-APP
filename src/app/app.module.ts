@@ -11,6 +11,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewAllCoursesComponent } from './view-all-courses/view-all-courses.component';
 
 const myRoute:Routes=[
   {
@@ -43,7 +44,8 @@ const myRoute:Routes=[
     ContactPgeComponent,
     AboutPageComponent,
     AdminLoginComponent,
-    NavigationComponent
+    NavigationComponent,
+    ViewAllCoursesComponent
   ],
   imports: [
     BrowserModule,
