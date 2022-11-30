@@ -19,6 +19,7 @@ import { EmployeePortalComponent } from './employee-portal/employee-portal.compo
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
+import { AddNavnarComponent } from './add-navnar/add-navnar.component';
 
 const myRoute:Routes=[
   {
@@ -60,6 +61,14 @@ const myRoute:Routes=[
   {
     path:"employeereg",
     component:EmployeeRegistrationComponent
+  },
+  {
+    path:"addcourse",
+    component:AddCourseComponent
+  },
+  {
+    path:"addfriend",
+    component:AddFriendComponent
   }
 ]
 
@@ -78,7 +87,8 @@ const myRoute:Routes=[
     EmployeePortalComponent,
     EmployeeRegistrationComponent,
     AddCourseComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    AddNavnarComponent
   ],
   imports: [
     BrowserModule,
