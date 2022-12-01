@@ -11,6 +11,7 @@ export class ViewAllCoursesComponent {
  constructor(private api:ApiService){
   api.fetchCourse().subscribe(
     (response)=>{
+      this.loading=false
       this.courses=response
     }
   )
@@ -18,5 +19,6 @@ export class ViewAllCoursesComponent {
 
 
   courses:any=[]
+  loading :boolean =true
 
 }
